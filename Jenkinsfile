@@ -23,7 +23,7 @@ pipeline {
                         sh """
                             docker login -u $USERNAME -p $PASSWORD
                             docker build -t mostafa001/challenge-app:${BUILD_NUMBER} .
-                            docker push mostafa001/task-app:${BUILD_NUMBER}
+                            docker push mostafa001/challenge-app:${BUILD_NUMBER}
                             echo ${BUILD_NUMBER} > ../bakehouse-build-number.txt
                         """
                     }
