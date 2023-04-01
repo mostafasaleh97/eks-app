@@ -37,9 +37,9 @@ pipeline {
                         sh """
                             aws eks update-kubeconfig --name demo
                             export BUILD_NUMBER=\$(cat ../bakehouse-build-number.txt)
-                            mv Deployment/deploy.yaml Deployment/deploy.yaml.tmp
-                            cat Deployment/deploy.yaml.tmp | envsubst > Deployment/deploy.yaml
-                            rm -f Deployment/deploy.yaml.tmp
+                            mv Deployment/app-py.yaml Deployment/app-py.yaml.tmp
+                            cat Deployment/app-py.yaml.tmp | envsubst > Deployment/app-py.yaml
+                            rm -f Deployment/app-py.yaml.tmp
                             kubectl apply -f Deployment 
                         """
                         
