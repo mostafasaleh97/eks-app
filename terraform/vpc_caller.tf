@@ -11,5 +11,5 @@ module "newvpc" {
   elastic-names = ["myel",]
   nat-names = ["mynat",]
   public-availability_zone = ["us-east-1a","us-east-1b"]
-  private-availability_zone = ["us-east-1c","us-east-1d"]
+  private-availability_zone = ["us-east-1a","us-east-1b"]
 }
