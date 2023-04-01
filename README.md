@@ -5,7 +5,7 @@ The idea from this project to use cicd pipeline to build infra of eks cluster on
 
 
 
-![alt text](https://github.com/mostafasaleh97/eks-app/blob/main/image.png?raw=true)
+![App structure](https://github.com/mostafasaleh97/eks-app/blob/main/image.png?raw=false)
 
 
 ## Steps
